@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Absensi Pengajian</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>📋 Absensi Pengajian</h1>
+
+    <div class="filters">
+
+      <input type="text" id="search" placeholder="Cari Nama..." />
+
+      <select id="genderFilter">
+        <option value="">Semua Gender</option>
+        <option value="L">Laki-Laki</option>
+        <option value="P">Perempuan</option>
+      </select>
+
+      <select id="kelompokFilter">
+        <option value="">Semua Kelompok</option>
+      </select>
+
+      <select id="pengajianFilter">
+        <option value="">Semua Pengajian</option>
+      </select>
+
+    </div>
+
+    <div class="table-wrapper">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Gender</th>
+            <th>Kelompok</th>
+            <th>Pengajian</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
